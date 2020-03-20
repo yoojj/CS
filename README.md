@@ -1,24 +1,17 @@
 # index
 
 - [Computer](./Computer/)   
-    - [Von Neumann Architecture](./Computer/VonNeumann-Architecture.md)
-    - [Hardware](./Computer/Hardware.md)
-    - [Software](./Computer/Software.md)
+    - [Von Neumann Architecture](./Computer/von-neumann-architecture.md)
+- [Hardware](./Computer/Hardware/)
+- [Software](./Software/)
 - [OS](./OS/)
-- [Software](./SW/)
-    - Software Model
-    - Software Architecture -- 소프트웨어 범위
-        - [Architectural Style](./SW/Architecture-Style/)
-        - [Architectural Pattern](./SW/Architectural-Pattern/)
-    - Software Design -- 모듈, 구성 요소, 클래스 범위
-        - [Design Pattern](./SW/Design-Pattern/)
 - [Program](./Program/)
     - [Programming Paradigm](./Program/Paradigm/)
     - [Programming Language](./Program/Language/)
-- [Algorithm](./Algorithm/)
-- [Data](https://github.com/45am-me/data)   
-- [Data Communication](./Communication/)
+    - [Programming Algorithm](./Program/Algorithm/)
+- [Data](https://github.com/yoojj/Data/)   
+    - [Data Structure](https://github.com/yoojj/Data/tree/master/Data-Structure)
+    - [Data Communication](https://github.com/yoojj/Data/tree/master/Data-Communication)
 - [Network](./Network/)
 - [Virtualization](./Virtualization/)
 - [Cloud](./Cloud/)
-- [Security](./Security/)
