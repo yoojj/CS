@@ -22,15 +22,9 @@ Central Processing Unit
 ```
 입력  -->  |      중앙 처리 장치     |  --> 출력
           | 제어장치  <-->  연산장치 |
-                     ↑↓
-                  기억 장치
+                      ↑↓
+                   기억 장치
 ```
-
-
-**마이크로 프로세서**   
-: CPU를 한 개의 칩으로 구현한 것   
-
-\+ MCU (Micro Controller Unit)
 
 
 
