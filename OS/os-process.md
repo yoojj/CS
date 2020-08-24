@@ -33,7 +33,7 @@
                      프로그램
 ------------------------------------------------
 |        프로세스        |    프로세스    |   ...
-|   (스레드) (스레드) ... |              |
+|   (스레드) (스레드) ... |               |
 
 # 스레드는 해당 프로세스가 소유한 메모리와 자원에만 접근 가능  
 ```
@@ -42,7 +42,6 @@
 
 ## Process State
 : 운영 체제에 따라 상태를 나타내는 단어 등이 다름    
-: 프로세스 생성시 만들어지며 프로세스가 종료되면 삭제됨    
 
 ```
 created  -->  ready state  -->  running  -->  terminated  
@@ -60,8 +59,15 @@ created  -->  ready state  -->  running  -->  terminated
 
 
 ## Process Control Block
-: 프로세스 제어를 위해 프로세스에 대한 정보를 담고 있는 데이터 구조체   
+: 프로세스 제어를 위해 프로세스에 대한 정보를 담고 있는 데이터 구조체     
+: 프로세스 생성시 커널 공간에 만들어지며 프로세스가 종료되면 삭제됨    
 : 운영 체제에 따라 다른 정보를 포함함      
+
+**데이터 구성**   
+- Process Identification Data
+- Process State Data
+- Process Control Data
+
 
 ```bash
 Process ID            # 프로세스 고유 번호
