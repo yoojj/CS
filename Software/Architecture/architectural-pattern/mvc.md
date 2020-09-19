@@ -1,13 +1,13 @@
 # MVC
 Model View Controller     
 : 코드-컴포넌트를 구성하는 방법론   
-: 컴포넌트를 데이터(Model), UI(View), 제어(Controller)에 따라 역할을 구분하여 레이어를 분리하고          
-&nbsp; 각 레이어와 레이어에 속한 컴포넌트는 자신이 맡은 관심에만 집중     
-: 관심사를 분리하여 유지 보수를 수월하게 함   
+: 컴포넌트를 데이터(Model), UI(View), 제어(Controller)에 따라 역할을 구분해 레이어를 분리하고          
+&nbsp; 각 레이어에 속한 컴포넌트는 자신이 맡은 관심-역할에만 집중     
+: 관심사를 분리하여 코드 관리를 수월하게 함   
 
 
 **파생**  
-- HMVC
+- HMVC 계층 적 모델 뷰 컨트롤러
 - MVA
 - MVP
 - MVVM
@@ -15,9 +15,9 @@ Model View Controller
 
 구성 요소 | 설명
 ---|---
-model      | 데이터 : 데이터베이스나 외부 API 접근  
-view       | 표현 : 모델을 사용해 렌더링
-controller | 제어 : 모델과 뷰 사이의 인터페이스
+model      | 데이터, 데이터베이스나 외부 API 접근  
+view       | 표현, 모델을 사용해 렌더링
+controller | 제어, 모델과 뷰 사이의 인터페이스
 
 
 **Active Model MVC**   
@@ -48,9 +48,19 @@ http://heim.ifi.uio.no/~trygver/themes/mvc/mvc-index.html
 
 
 ## Web Application MVC
-: HTTP 프로토콜의 특성으로 GUI 방식의 MVC 패턴 사용 불가   
-: Front Controller 패턴을 도입   
+: HTTP 프로토콜의 특성으로 GUI 방식의 MVC 패턴 사용 불가 (Stateless 상태로 모델 유지 불가능)   
+: Front Controller 패턴 도입    
 
+1. 사용자 이벤트-요청 발생
+2. 프론트 컨트롤러에서 모든 요청을 받아
+3. 다른 컨트롤러에게 위임   
+4. 요청을 전달받은 컨트롤러가 모델을 업데이트하고 이를 프론트 컨트롤러에게 전달하면
+5. 프론트 컨트롤러가 뷰를 선택해 모델을 전달    
+
+
+```
+request  -->  front controller  -->  controller  
+```
 
 
 [top](#)
