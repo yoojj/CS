@@ -1,8 +1,8 @@
-# File System
+# OS File System
 : 저장 장치에서 파일을 읽거나 저장하고 검색이 용이하도록 관리하는 체계 및 프로그램     
 
 - [File](#file)
-- [File system](#file-system)
+- [File System](#file-system)
 
 
 
